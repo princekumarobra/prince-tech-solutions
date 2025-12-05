@@ -3,183 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Prince Tech Solutions</title>
+    <title>Contact Us & Enquiry - Prince Tech Solutions Pvt. Ltd.</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Contact Form CSS -->
-    <style>
-        .contact-wrapper {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-            margin-top: 20px;
-        }
-        .contact-info-box {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        }
-        .info-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-            font-size: 1rem;
-        }
-        .info-item i {
-            width: 40px;
-            height: 40px;
-            background: var(--primary-color);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 15px;
-        }
-        .form-box {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: 600;
-        }
-        .form-group input, .form-group textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
-        .form-group textarea {
-            height: 100px;
-            resize: vertical;
-        }
-    </style>
 </head>
 <body id="top">
+    <!-- 1. Top Branding Bar (Master Plan Header) -->
+    <!-- 2. NAVIGATION BAR (Master Plan Navbar) -->
 
-    <!-- ===== NAVIGATION BAR ===== -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <img src="logo-pts.png" alt="PTS Logo" class="logo-img">
-                PTS <span>Solutions</span>
-            </a>
-
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" style="background: var(--white); padding: 50px 0; text-align: center;">
+            <div class="container">
+                <h1 style="font-size: 2.5rem; color: var(--dark-color);">Contact Us & Start Your Project</h1>
+                <p style="color: #666; max-width: 700px; margin: 10px auto;">
+                    Reach out to discuss your requirements, get a quote, or enquire about our services.
+                </p>
             </div>
+        </section>
 
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="service.html" class="nav-link">Services</a></li>
-                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-                <li><a href="contact.html" class="nav-link active">Contact</a></li>
-                <li><a href="tel:+919065885746" class="nav-btn">Call Now</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- ===== HERO ===== -->
-    <section class="hero" style="padding: 40px 0; text-align: center;">
-        <div class="container">
-            <h1 style="color: var(--dark-color);">Get In Touch</h1>
-            <p>Start your digital journey with PTS today.</p>
-        </div>
-    </section>
-
-    <!-- ===== CONTACT CONTENT ===== -->
-    <section class="section" style="padding-top: 0;">
-        <div class="container">
-            <div class="contact-wrapper">
-                
-                <!-- Left Side: Contact Info -->
-                <div class="contact-info-box">
-                    <h3 style="margin-bottom: 20px;">Contact Details</h3>
-                    
-                    <div class="info-item">
-                        <i class="fas fa-user"></i>
-                        <div>
-                            <strong>Name:</strong>
-                            <p>Prince Kumar</p>
-                        </div>
-                    </div>
-
-                    <div class="info-item">
+        <!-- Contact Form & Info -->
+        <section class="section contact-page-section">
+            <div class="container contact-grid-2">
+                <!-- Left: Contact Details -->
+                <div class="contact-info-col">
+                    <h2>Direct Contact Information</h2>
+                    <div class="contact-detail-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <strong>Address:</strong>
-                            <p>Near Obra Block, Pani Tanki ke samne,<br>Aurangabad (Bihar) – 824124</p>
-                        </div>
+                        <h4>Our Office Address</h4>
+                        <p>Near Obra Block, Pani Tanki ke samne,<br>Aurangabad, Bihar – 824124, India</p>
+                        <a href="https://maps.app.goo.gl/YourMapLink" target="_blank">View on Google Maps →</a>
                     </div>
-
-                    <div class="info-item">
+                    <div class="contact-detail-item">
                         <i class="fas fa-phone-alt"></i>
-                        <div>
-                            <strong>Phone / WhatsApp:</strong>
-                            <p><a href="tel:+919065885746">+91 90658 85746</a></p>
-                        </div>
+                        <h4>Call / WhatsApp Support</h4>
+                        <p>**+91 90658 85746**</p>
+                        <p style="font-size: 0.9rem; color: var(--secondary-color);">Support Hours: 10:00 AM - 6:00 PM (IST)</p>
                     </div>
-
-                    <div class="info-item">
+                    <div class="contact-detail-item">
                         <i class="fas fa-envelope"></i>
-                        <div>
-                            <strong>Email:</strong>
-                            <p>princekumar73678852@gmail.com</p>
-                        </div>
+                        <h4>Email & Support</h4>
+                        <p>contact@princetechsolutions.com</p>
+                    </div>
+                    
+                    <div class="contact-detail-item">
+                        <i class="fas fa-university"></i>
+                        <h4>Offline Payment Details</h4>
+                        <p style="font-size: 0.9rem; color: #555;">(Will be provided upon request for Bank Transfer / UPI)</p>
                     </div>
                 </div>
 
-                <!-- Right Side: Enquiry Form -->
-                <div class="form-box">
-                    <h3 style="margin-bottom: 20px;">Send a Message</h3>
-                    <form action="#" method="post">
-                        <div class="form-group">
-                            <label>Your Name</label>
-                            <input type="text" placeholder="Enter full name" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Mobile Number</label>
-                            <input type="tel" placeholder="Enter mobile number" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Requirement</label>
-                            <textarea placeholder="I need a website for..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%; border: none; cursor: pointer;">Send Enquiry</button>
+                <!-- Right: Enquiry Form -->
+                <div class="enquiry-form-col">
+                    <h2>Send Us an Enquiry</h2>
+                    <form action="thanks.html" method="POST" class="full-contact-form">
+                        <input type="text" placeholder="Your Full Name" required>
+                        <input type="email" placeholder="Email Address" required>
+                        <input type="tel" placeholder="Mobile Number" required>
+                        
+                        <select required>
+                            <option value="">Select Requirement Type*</option>
+                            <option value="website">New Website / Custom Portal</option>
+                            <option value="domain">Domain & Hosting only</option>
+                            <option value="blog">Blogger / WordPress Setup</option>
+                            <option value="maintenance">Maintenance / Updates</option>
+                            <option value="other">Other</option>
+                        </select>
+                        
+                        <textarea placeholder="Tell us about your project/requirement in detail..." rows="5" required></textarea>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            Submit Enquiry (Demo)
+                        </button>
                     </form>
                 </div>
-
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ===== FOOTER ===== -->
-    <footer>
-        <div class="container footer-content">
-            <div class="footer-bottom-text">
-                <p>Designed & Developed by <strong>Prince Tech Solutions (PTS)</strong></p>
-                <p>© 2025 All Rights Reserved.</p>
-                <div style="margin-top: 10px; font-size: 0.8rem;">
-                    <a href="privacy.html" style="color: #aaa; margin: 0 5px;">Privacy Policy</a> |
-                    <a href="refund.html" style="color: #aaa; margin: 0 5px;">Refund Policy</a> |
-                    <a href="disclaimer.html" style="color: #aaa; margin: 0 5px;">Disclaimer</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    </main>
 
+    <!-- 3. FOOTER (Master Plan Footer) -->
     <script src="main.js"></script>
 </body>
 </html>
