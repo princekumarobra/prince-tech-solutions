@@ -3,158 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - Prince Tech Solutions</title>
+    <title>Web & Digital Services - Prince Tech Solutions Pvt. Ltd.</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body id="top">
+    <!-- 1. Top Branding Bar (Master Plan Header) -->
+    <!-- 2. NAVIGATION BAR (Master Plan Navbar) -->
 
-    <!-- ===== NAVIGATION BAR (Same as Index) ===== -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <img src="logo-pts.png" alt="PTS Logo" class="logo-img">
-                PTS <span>Solutions</span>
-            </a>
-
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+    <main>
+        <!-- Hero: Services -->
+        <header class="hero" style="background: var(--white); padding: 50px 0; text-align: center;">
+            <div class="container">
+                <span class="subtitle">Our Complete Offerings</span>
+                <h1 style="font-size: 2.5rem; color: var(--dark-color);">Web & Digital Services for Your Business</h1>
+                <p style="color: #666; max-width: 700px; margin: 10px auto;">
+                    From custom coding to cloud deployment, we provide a full stack of services to take your business online.
+                </p>
             </div>
+        </header>
 
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="service.html" class="nav-link active">Services</a></li>
-                <li><a href="hosting-domain.html" class="nav-link">Hosting</a></li>
-                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-                <li><a href="tel:+919065885746" class="nav-btn">Call Now</a></li>
-            </ul>
-        </div>
-    </nav>
+        <!-- Detailed Service Blocks -->
+        <section class="section service-detail-section">
+            <div class="container">
 
-    <!-- ===== PAGE HEADER ===== -->
-    <section class="hero" style="padding: 60px 0; text-align: center;">
-        <div class="container">
-            <h1 style="font-size: 2.5rem; color: var(--dark-color);">Services I Provide</h1>
-            <p style="color: #666; max-width: 600px; margin: 10px auto;">
-                Clinic, School, Coaching, Logistics ya Personal Brand – Har business ke liye fast aur secure digital solution.
-            </p>
-        </div>
-    </section>
-
-    <!-- ===== DETAILED SERVICES SECTION ===== -->
-    <section class="section" style="padding-top: 20px;">
-        <div class="container">
-            
-            <div class="card-grid">
+                <!-- Block 1: Custom Website Development -->
+                <div class="service-block">
+                    <i class="fas fa-laptop-code service-icon"></i>
+                    <div class="service-content">
+                        <h2>Custom Website Development (HTML/CSS/JS)</h2>
+                        <p>Clean, modern, and fully responsive websites coded from scratch for maximum speed, security, and performance. Ideal for small to mid-sized businesses.</p>
+                        <ul class="feature-list-service">
+                            <li><i class="fas fa-check-circle"></i> Pure, Fast Loading Code</li>
+                            <li><i class="fas fa-check-circle"></i> Mobile-First Responsive Design</li>
+                            <li><i class="fas fa-check-circle"></i> Basic SEO Optimization</li>
+                            <li><i class="fas fa-check-circle"></i> Suitable for Clinics, Coaching, Shops, Schools.</li>
+                        </ul>
+                    </div>
+                </div>
                 
-                <!-- Service 1: Custom Coding -->
-                <div class="card">
-                    <div class="icon-circle"><i class="fas fa-code"></i></div>
-                    <h3>Custom Coding Website</h3>
-                    <p>HTML, CSS, JavaScript se bani fast loading aur secure websites.</p>
-                    <ul style="text-align: left; margin-top: 15px; padding-left: 20px; color: #555; font-size: 0.9rem;">
-                        <li>Responsive Mobile Friendly Design</li>
-                        <li>High Speed & Security</li>
-                        <li>Custom Features (Forms, Sliders)</li>
-                        <li>Lifetime Technical Support</li>
-                    </ul>
+                <!-- Block 2: Govt / Result Portals -->
+                <div class="service-block reverse">
+                    <i class="fas fa-university service-icon"></i>
+                    <div class="service-content">
+                        <h2>Govt / Bank / High-Traffic Portals</h2>
+                        <p>Specialized development for high-volume traffic websites, requiring robust database management and high uptime. (e.g., Result, Notice, Admission Portals)</p>
+                        <ul class="feature-list-service">
+                            <li><i class="fas fa-check-circle"></i> Secure Admin Panel & Data Management</li>
+                            <li><i class="fas fa-check-circle"></i> Online Application/Form Processing</li>
+                            <li><i class="fas fa-check-circle"></i> Cloud Hosting Consultation & Deployment</li>
+                            <li><i class="fas fa-check-circle"></i> Result Table, PDF Download & Admit Card System.</li>
+                        </ul>
+                        <a href="govt-bank.html" class="btn btn-outline btn-small">View Portal Details →</a>
+                    </div>
                 </div>
-
-                <!-- Service 2: Govt Portals -->
-                <div class="card">
-                    <div class="icon-circle"><i class="fas fa-university"></i></div>
-                    <h3>Govt & Result Portals</h3>
-                    <p>FastUpdate style portals for Admit Card, Result, and Job Notifications.</p>
-                    <ul style="text-align: left; margin-top: 15px; padding-left: 20px; color: #555; font-size: 0.9rem;">
-                        <li>Advanced Admin Panel</li>
-                        <li>PDF Download Section</li>
-                        <li>Notice Board & Marquee Updates</li>
-                        <li>High Traffic Handling</li>
-                    </ul>
-                </div>
-
-                <!-- Service 3: CMS Setup -->
-                <div class="card">
-                    <div class="icon-circle"><i class="fab fa-wordpress-simple"></i></div>
-                    <h3>Blogger / WordPress</h3>
-                    <p>Agar aapko news ya blog chalana hai to ye sabse best aur sasta option hai.</p>
-                    <ul style="text-align: left; margin-top: 15px; padding-left: 20px; color: #555; font-size: 0.9rem;">
-                        <li>Premium Theme Setup</li>
-                        <li>SEO & AdSense Friendly</li>
-                        <li>Menu & Category Setup</li>
-                        <li>Easy to Post Content</li>
-                    </ul>
-                </div>
-
-                <!-- Service 4: Payment Gateway -->
-                <div class="card">
-                    <div class="icon-circle"><i class="fas fa-money-bill-wave"></i></div>
-                    <h3>Payment Integration</h3>
-                    <p>Website par online payment lene ke liye Razorpay ya UPI setup.</p>
-                    <ul style="text-align: left; margin-top: 15px; padding-left: 20px; color: #555; font-size: 0.9rem;">
-                        <li>"Pay Now" Button</li>
-                        <li>QR Code Integration</li>
-                        <li>Direct Bank Settlement</li>
-                        <li>Secure Transaction</li>
-                    </ul>
-                </div>
-
-                <!-- Service 5: Maintenance -->
-                <div class="card">
-                    <div class="icon-circle"><i class="fas fa-tools"></i></div>
-                    <h3>Maintenance & Support</h3>
-                    <p>Purani website me changes karwana ya server manage karna.</p>
-                    <ul style="text-align: left; margin-top: 15px; padding-left: 20px; color: #555; font-size: 0.9rem;">
-                        <li>Text & Image Updates</li>
-                        <li>Hosting/Domain Renewal</li>
-                        <li>Bug Fixing</li>
-                        <li>Backup & Restore</li>
-                    </ul>
-                </div>
-
-                <!-- Service 6: Business Setup -->
-                <div class="card">
-                    <div class="icon-circle"><i class="fas fa-briefcase"></i></div>
-                    <h3>Full Business Setup</h3>
-                    <p>Domain, Hosting, SSL, Email aur Website - Sab ek jagah se.</p>
-                    <ul style="text-align: left; margin-top: 15px; padding-left: 20px; color: #555; font-size: 0.9rem;">
-                        <li>.com / .in Domain Registration</li>
-                        <li>Fast SSD Hosting</li>
-                        <li>Official Email (info@yourdomain)</li>
-                        <li>Google Map Listing</li>
-                    </ul>
+                
+                <!-- Block 3: Blogger / WordPress Setup -->
+                <div class="service-block">
+                    <i class="fab fa-wordpress service-icon"></i>
+                    <div class="service-content">
+                        <h2>Blogger / WordPress Setup & SEO</h2>
+                        <p>Complete setup, configuration, and optimization for your blog or news website. Focus on fast loading, AdSense readiness, and basic SEO.</p>
+                        <ul class="feature-list-service">
+                            <li><i class="fas fa-check-circle"></i> Theme Installation & Customization</li>
+                            <li><i class="fas fa-check-circle"></i> Menu, Categories, and Widget Setup</li>
+                            <li><i class="fas fa-check-circle"></i> AdSense Ready Structure & Basic SEO</li>
+                            <li><i class="fas fa-check-circle"></i> Dedicated Support for Bloggers.</li>
+                        </ul>
+                    </div>
                 </div>
 
             </div>
-        </div>
-    </section>
-
-    <!-- ===== CTA STRIP ===== -->
-    <section class="contact-strip">
-        <div class="container">
-            <h2>Ready to start?</h2>
-            <p>Call now to discuss your requirements and get a free quote.</p>
-            <a href="tel:+919065885746" class="btn btn-white">Call: +91 90658 85746</a>
-        </div>
-    </section>
-
-    <!-- ===== FOOTER (Same as Index) ===== -->
-    <footer>
-        <div class="container footer-content">
-            <div class="footer-col">
-                <h4>Prince Tech Solutions (PTS)</h4>
-                <p>Web · Apps · Digital Services</p>
+        </section>
+        
+        <!-- Add-ons Section -->
+        <section class="section addons-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Maintenance & Digital Add-ons</h2>
+                </div>
+                <div class="card-grid addons-grid">
+                    <div class="addon-card">
+                        <i class="fas fa-wrench"></i>
+                        <h4>Annual Maintenance</h4>
+                        <p>Content update, regular backups, security monitoring, and technical support for hosting issues.</p>
+                    </div>
+                    <div class="addon-card">
+                        <i class="fas fa-search"></i>
+                        <h4>SEO & Analytics Setup</h4>
+                        <p>Google Search Console, Analytics setup, basic keywords research, and on-page optimization advice.</p>
+                    </div>
+                    <div class="addon-card">
+                        <i class="fas fa-credit-card"></i>
+                        <h4>Payment Gateway Integration</h4>
+                        <p>Secure integration of Razorpay/UPI/Instamojo payment links for collecting fees/payments online.</p>
+                    </div>
+                </div>
             </div>
-            <div class="footer-bottom-text">
-                <p>Designed & Developed by <strong>Prince Tech Solutions (PTS)</strong></p>
-                <p>© 2025 All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
+        </section>
 
+        <!-- Final CTA Strip -->
+        <section class="section contact-strip-full" style="padding: 40px 0;">
+            <div class="container" style="text-align: center;">
+                <h2 style="color: var(--white);">Ready to discuss your project?</h2>
+                <a href="contact.html" class="btn btn-white" style="background: var(--white); color: var(--primary-color);">
+                    Get a Free Quote
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 3. FOOTER (Master Plan Footer) -->
     <script src="main.js"></script>
 </body>
 </html>
