@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Prince Tech Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Inline CSS for Portfolio Specifics -->
+    <style>
+        .portfolio-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #eee;
+        }
+        .category-badge {
+            background: #e1f5fe;
+            color: var(--secondary-color);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body id="top">
+
+    <!-- ===== NAVIGATION BAR ===== -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo-pts.png" alt="PTS Logo" class="logo-img">
+                PTS <span>Solutions</span>
+            </a>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="service.html" class="nav-link">Services</a></li>
+                <li><a href="hosting-domain.html" class="nav-link">Hosting</a></li>
+                <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                <li><a href="govt-bank.html" class="nav-link">Govt & Bank</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===== HEADER ===== -->
+    <section class="hero" style="padding: 50px 0; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 2.5rem; color: var(--dark-color);">My Recent Work</h1>
+            <p style="color: #666; max-width: 600px; margin: 10px auto;">
+                Check out some of the live projects delivered to happy clients.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== PORTFOLIO GRID ===== -->
+    <section class="section" style="padding-top: 10px;">
+        <div class="container">
+            
+            <div class="card-grid">
+
+                <!-- Project 1: Govt Portal -->
+                <div class="card" style="text-align: left;">
+                    <!-- Image -->
+                    <img src="hero-pts.png" alt="Govt Job Portal" class="portfolio-img">
+                    
+                    <span class="category-badge">Govt Portal</span>
+                    <h3>Sarkari Exam & Result Portal</h3>
+                    <p style="margin-bottom: 15px;">Fast loading portal with Admit Card download, Result checking, and Admin Panel features.</p>
+                    <a href="#" class="btn btn-outline" style="padding: 8px 20px; font-size: 0.9rem;">View Demo</a>
+                </div>
+
+                <!-- Project 2: Coaching -->
+                <div class="card" style="text-align: left;">
+                    <img src="meeting1.png" alt="Coaching Website" class="portfolio-img">
+                    
+                    <span class="category-badge">Education</span>
+                    <h3>Coaching Institute Website</h3>
+                    <p style="margin-bottom: 15px;">Complete website for Coaching with Gallery, Faculty List, and Student Enquiry Form.</p>
+                    <a href="#" class="btn btn-outline" style="padding: 8px 20px; font-size: 0.9rem;">View Demo</a>
+                </div>
+
+                <!-- Project 3: E-Commerce -->
+                <div class="card" style="text-align: left;">
+                    <img src="meeting2.png" alt="Shop Website" class="portfolio-img">
+                    
+                    <span class="category-badge">E-Commerce</span>
+                    <h3>Local Shop / Business</h3>
+                    <p style="margin-bottom: 15px;">Product catalog website. Customers can see items and order directly via WhatsApp.</p>
+                    <a href="#" class="btn btn-outline" style="padding: 8px 20px; font-size: 0.9rem;">View Demo</a>
+                </div>
+
+                <!-- Project 4: Blog -->
+                <div class="card" style="text-align: left;">
+                    <img src="meeting3.png" alt="News Blog" class="portfolio-img">
+                    
+                    <span class="category-badge">Blogging</span>
+                    <h3>News & Job Update Blog</h3>
+                    <p style="margin-bottom: 15px;">AdSense ready blog setup with SEO optimization and social sharing features.</p>
+                    <a href="#" class="btn btn-outline" style="padding: 8px 20px; font-size: 0.9rem;">View Demo</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT CTA ===== -->
+    <section class="contact-strip">
+        <div class="container">
+            <h2>Want a similar website?</h2>
+            <p>Select a design you like and we will build it for you.</p>
+            <a href="tel:+919065885746" class="btn btn-white">Call Now</a>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container footer-content">
+            <p>Designed & Developed by <strong>Prince Tech Solutions (PTS)</strong></p>
+            <p>© 2025 All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

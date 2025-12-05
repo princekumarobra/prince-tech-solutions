@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince Tech Solutions Pvt. Ltd. – Web & Digital Services</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body id="top">
+
+    <!-- 1. Top Branding Bar (Branding: Pvt. Ltd.) -->
+    <div class="top-brand-bar">
+        <div class="container top-bar-content">
+            <div class="branding-center">
+                <div class="brand-name">PRINCE TECH SOLUTIONS PVT. LTD.</div>
+                <div class="tagline">Web · Apps · Digital Services</div>
+            </div>
+            <a href="tel:+919065885746" class="call-btn-top">Call / WhatsApp</a>
+        </div>
+    </div>
+
+    <!-- ===== 2. NAVIGATION BAR (FIXED) ===== -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <img src="logo-pts.png" alt="PTS Logo" class="logo-img">
+                Prince Tech <span>Pvt. Ltd.</span>
+            </a>
+
+            <!-- Hamburger Button -->
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <!-- Menu Links (Fixed Structure) -->
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                
+                <!-- NEW: Service Dropdown -->
+                <li class="dropdown-nav">
+                    <a href="service.html" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="service.html">Custom Website Services</a></li>
+                        <li><a href="hosting-domain.html">Hosting & Domain</a></li>
+                        <li><a href="govt-bank.html">Govt & Bank Websites</a></li>
+                        <li><a href="payment.html">Payments / Razorpay</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="clients.html" class="nav-link">Our Clients</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li> <!-- FAQ Added -->
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+
+                <!-- Policies Dropdown (script.html added for Term) -->
+                <li class="dropdown-nav">
+                    <a href="privacy.html" class="nav-link">Policies <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="refund.html">Refund Policy</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                        <li><a href="script.html">Terms & Conditions</a></li> <!-- script.html added -->
+                    </ul>
+                </li>
+                <li><a href="tel:+919065885746" class="nav-btn">Call Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ===== HERO SECTION (a) - Updated for Background Effect ===== -->
+        <header class="hero hero-with-bg">
+            <div class="hero-overlay"></div> <!-- For Tint/Blur Effect -->
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <span class="subtitle">Hi, I'm Prince Kumar</span>
+                    <h1>Modern, clean & fast websites <br>for your business.</h1>
+                    <p>
+                        Clinic, coaching, shops, logistics, schools ya government form portals – 
+                        main domain se live website tak complete coding setup karta hoon. 
+                        Blogger / WordPress setup aur Razorpay payment integration bhi.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <a href="tel:+919065885746" class="btn btn-primary">Call Now for Website</a>
+                        <a href="portfolio.html" class="btn btn-outline">View My Work</a>
+                    </div>
+                    
+                    <div class="hero-tags">
+                        <span><i class="fas fa-code"></i> Custom HTML/CSS/JS Coding</span>
+                        <span><i class="fab fa-wordpress"></i> Blogger/WordPress Setup</span>
+                        <span><i class="fas fa-credit-card"></i> Razorpay/UPI integration</span>
+                    </div>
+                </div>
+                <!-- Image removed from HTML flow, now set as CSS background in style.css -->
+            </div>
+        </header>
+
+        <!-- ===== SERVICES SECTION (b) (Rest of the index.html content remains the same) ===== -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Services I Provide</h2>
+                    <p>Complete digital setup for your business – coding se lekar payment integration tak.</p>
+                </div>
+
+                <div class="card-grid">
+                    <!-- Service 1 -->
+                    <div class="card">
+                        <div class="icon-circle"><i class="fas fa-laptop-code"></i></div>
+                        <h3>Website Development</h3>
+                        <p>Clean, responsive websites using HTML, CSS & JavaScript. Perfect for clinic, hospital, school, coaching, shops & local businesses.</p>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="card">
+                        <div class="icon-circle"><i class="fas fa-university"></i></div>
+                        <h3>Govt / Bank / Result Portals</h3>
+                        <p>Form, admit card, result & yojna portals – FastUpdate style. Online forms, secure admin panel & download section.</p>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="card">
+                        <div class="icon-circle"><i class="fab fa-blogger"></i></div>
+                        <h3>Blogger / WordPress Setup</h3>
+                        <p>News & yojna update blog websites – theme, categories, menu, SEO & ads ready structure tak complete setup.</p>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="card">
+                        <div class="icon-circle"><i class="fas fa-store"></i></div>
+                        <h3>Business Websites</h3>
+                        <p>Clinic, coaching centers, logistics, shops aur service providers ke liye simple & professional websites.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== WHY CHOOSE PTS (c) ===== -->
+        <section class="section why-pts-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Why choose PTS?</h2>
+                </div>
+                <div class="card-grid why-pts-grid">
+                    <div class="why-pts-card"><i class="fas fa-tachometer-alt"></i> Fast loading & Clean Design</div>
+                    <div class="why-pts-card"><i class="fas fa-map-marker-alt"></i> Aurangabad, Bihar based support</div>
+                    <div class="why-pts-card"><i class="fas fa-money-check-alt"></i> Razorpay integrated payments</div>
+                    <div class="why-pts-card"><i class="fas fa-lock"></i> Clean coding & Basic SEO</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ===== MEETING / TRUST SECTION (d) ===== -->
+        <section class="section trust-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Clients ke sath meeting & planning</h2>
+                    <p>Clear communication is key to a successful project.</p>
+                </div>
+                <div class="meeting-photos-grid">
+                    <img src="meeting1.png" alt="Client Meeting 1" class="round-photo">
+                    <img src="meeting2.png" alt="Client Meeting 2" class="round-photo">
+                    <img src="meeting3.png" alt="Client Meeting 3" class="round-photo">
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== QUICK CONTACT BLOCK (e) ===== -->
+        <section class="contact-strip-full">
+            <div class="container contact-grid-2">
+                <!-- Left: Direct Contact -->
+                <div class="direct-contact">
+                    <h2>Let’s Build Your Website</h2>
+                    <p class="subtitle-p">Clinic, coaching, shops, logistics, blog, govt form portal – sab ke liye clean & fast website.</p>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Near Obra Block, Pani Tanki ke samne, Aurangabad (Bihar) – 824124</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>Mobile / WhatsApp: **+91 90658 85746**</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>Email: princekumar73678852@gmail.com</p>
+                    </div>
+                    <a href="tel:+919065885746" class="btn btn-primary" style="margin-top: 20px;">Call Now</a>
+                </div>
+
+                <!-- Right: Quick Enquiry Form -->
+                <div class="quick-enquiry-card">
+                    <h3>Quick Enquiry (Demo)</h3>
+                    <p class="form-note">Future me is form ko email / Google Sheet se connect kiya ja sakta hai.</p>
+                    <form action="thanks.html" method="POST">
+                        <input type="text" placeholder="Enter your full name" required>
+                        <input type="tel" placeholder="Enter mobile number" required>
+                        <textarea placeholder="Website Requirement: Clinic website, blog, form portal, etc." rows="3" required></textarea>
+                        <button type="submit" class="btn btn-primary">Submit Enquiry (Demo)</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== 3. FOOTER (Master Plan 3 Columns - Branding: Pvt. Ltd.) ===== -->
+    <footer>
+        <div class="container footer-grid">
+            
+            <!-- Col 1: PTS Address -->
+            <div class="footer-col address-col">
+                <h4>Prince Tech Solutions Pvt. Ltd.</h4>
+                <p>Near Obra Block, Pani Tanki ke samne,<br> Aurangabad, Bihar – 824124, India</p>
+                <p>Mobile: +91 90658 85746</p>
+                <p>Email: princekumar73678852@gmail.com</p>
+            </div>
+
+            <!-- Col 2: Important Links -->
+            <div class="footer-col links-col">
+                <h4>Important Links</h4>
+                <ul>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="hosting-domain.html">Hosting & Domain</a></li>
+                    <li><a href="payment.html">Payment / Razorpay</a></li>
+                    <li><a href="govt-bank.html">Govt & Bank Websites</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Policies -->
+            <div class="footer-col policies-col">
+                <h4>Policies</h4>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="refund.html">Refund Policy</a></li>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                    <li><a href="script.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Footer Bottom -->
+        <div class="footer-bottom-text">
+            <a href="#top" class="back-to-top">↑ Back to Top</a>
+            <p>Designed & Developed by **Prince Tech Solutions Pvt. Ltd.**</p>
+            <p>© 2025 All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JS Link -->
+    <script src="main.js"></script>
+</body>
+</html>

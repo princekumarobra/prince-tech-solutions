@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Prince Tech Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Contact Form CSS -->
+    <style>
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 20px;
+        }
+        .contact-info-box {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+        .info-item i {
+            width: 40px;
+            height: 40px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+        }
+        .form-box {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .form-group textarea {
+            height: 100px;
+            resize: vertical;
+        }
+    </style>
+</head>
+<body id="top">
+
+    <!-- ===== NAVIGATION BAR ===== -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo-pts.png" alt="PTS Logo" class="logo-img">
+                PTS <span>Solutions</span>
+            </a>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="service.html" class="nav-link">Services</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li><a href="tel:+919065885746" class="nav-btn">Call Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" style="padding: 40px 0; text-align: center;">
+        <div class="container">
+            <h1 style="color: var(--dark-color);">Get In Touch</h1>
+            <p>Start your digital journey with PTS today.</p>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT CONTENT ===== -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="contact-wrapper">
+                
+                <!-- Left Side: Contact Info -->
+                <div class="contact-info-box">
+                    <h3 style="margin-bottom: 20px;">Contact Details</h3>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-user"></i>
+                        <div>
+                            <strong>Name:</strong>
+                            <p>Prince Kumar</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Address:</strong>
+                            <p>Near Obra Block, Pani Tanki ke samne,<br>Aurangabad (Bihar) – 824124</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <strong>Phone / WhatsApp:</strong>
+                            <p><a href="tel:+919065885746">+91 90658 85746</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email:</strong>
+                            <p>princekumar73678852@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Enquiry Form -->
+                <div class="form-box">
+                    <h3 style="margin-bottom: 20px;">Send a Message</h3>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label>Your Name</label>
+                            <input type="text" placeholder="Enter full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Mobile Number</label>
+                            <input type="tel" placeholder="Enter mobile number" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Requirement</label>
+                            <textarea placeholder="I need a website for..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; border: none; cursor: pointer;">Send Enquiry</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-bottom-text">
+                <p>Designed & Developed by <strong>Prince Tech Solutions (PTS)</strong></p>
+                <p>© 2025 All Rights Reserved.</p>
+                <div style="margin-top: 10px; font-size: 0.8rem;">
+                    <a href="privacy.html" style="color: #aaa; margin: 0 5px;">Privacy Policy</a> |
+                    <a href="refund.html" style="color: #aaa; margin: 0 5px;">Refund Policy</a> |
+                    <a href="disclaimer.html" style="color: #aaa; margin: 0 5px;">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

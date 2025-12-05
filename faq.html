@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Frequently Asked Questions - Prince Tech Solutions Pvt. Ltd.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* FAQ PAGE STYLES - Isko style.css mein add karein */
+        .faq-section {
+            padding: 80px 0;
+            background: var(--light-color);
+        }
+        .faq-category {
+            margin-bottom: 50px;
+        }
+        .faq-category h2 {
+            color: var(--secondary-color);
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .faq-item {
+            background: var(--white);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            color: var(--dark-color);
+        }
+        .faq-question:hover {
+            background-color: #f7f7f7;
+        }
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0; /* Initially hidden */
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+            background-color: #fcfcfc;
+            color: #555;
+            font-size: 0.95rem;
+        }
+        .faq-answer p {
+            padding: 15px 0;
+            margin: 0;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 500px; /* Large enough to show content */
+            padding-bottom: 15px;
+        }
+        .faq-question i {
+            font-size: 1.2rem;
+            transition: transform 0.3s;
+        }
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- NOTE: Please use your full common HTML header (Top Bar + Navbar) from index.html here -->
+
+    <main>
+        <header class="hero" style="background: var(--white); padding: 50px 0;">
+            <div class="container" style="text-align: center;">
+                <span class="subtitle">Quick Answers</span>
+                <h1 style="color: var(--dark-color); font-size: 2.5rem;">Frequently Asked Questions (FAQ)</h1>
+                <p>Find solutions to common queries about our services, payments, and support.</p>
+            </div>
+        </header>
+        
+        <section class="faq-section">
+            <div class="container">
+
+                <!-- Category 1: Website Development -->
+                <div class="faq-category">
+                    <h2>1. Website Development</h2>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Website banane mein kitna samay lagega?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Basic websites ke liye 7-10 din. Business/Govt portals ke liye, requirement ke hisaab se 15-30 din ya zyada lag sakte hain.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Kya aapke websites mobile friendly hote hain?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Ji haan, humare sabhi websites 'fully responsive' hote hain, jo har device (mobile, tablet, desktop) par perfect dikhte hain.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Design mein changes kitni baar kar sakte hain?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Design approval stage tak major changes free hote hain. Ek baar development shuru hone ke baad, chote changes hum accommodate karte hain, lekin bade changes ke liye alag fee lag sakti hai.</p>
+                        </div>
+                    </div>
+                     <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Kya aap maintenance service bhi provide karte hain?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Ji haan, hum annual maintenance packages offer karte hain jisme content updates, security checks, aur technical support shamil hota hai. Pehle 3 months basic support free hota hai.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Category 2: Domain & Hosting -->
+                <div class="faq-category">
+                    <h2>2. Domain & Hosting</h2>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Domain aur Hosting ka kharcha kitna aata hai?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Domain (.com/.in) aur basic hosting ka kharcha usually ₹1500 se ₹3000 prati varsh (per year) aata hai. Bade portals ke liye Cloud hosting ka charge zyada hota hai. Yeh service fee se alag hota hai.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Domain kiske naam se register hoga?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Domain hamesha **aapke naam** aur **aapke email** se register hoga. Iska pura control aapke paas rahega, hum sirf technical setup mein help karte hain.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Kya main apna existing hosting use kar sakta hoon?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Bilkul. Agar aapke paas pehle se hi hosting hai, toh hum uspar bhi website deploy kar denge. Lekin, hum quality aur speed ke liye apne recommended hosting (reseller store) se kharidne ki salah denge.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Category 3: Payments & Refunds -->
+                <div class="faq-category">
+                    <h2>3. Payments & Refunds</h2>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Payment methods kya-kya hain?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Hum secure online payments (Razorpay Payment Links, UPI, Netbanking) aur offline bank transfer bhi accept karte hain. Cash/Cheque ke liye Contact Page dekhein.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Kya advance payment refundable hai?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Initial **Booking Amount** (Advance) **non-refundable** hota hai, kyunki isse hum design aur initial development shuru karte hain. Refund policy ki poori jaankari ke liye <a href="refund.html" style="color: var(--secondary-color); font-weight: bold;">Refund Policy Page</a> dekhein.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Payment fail ho gaya toh kya karein?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Agar online payment fail ho jaye ya amount cut ho jaaye, toh turant humare mobile number (+91 90658 85746) par call karein. Hum manual confirmation aur naye link ke liye help karenge.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- NOTE: Please use your full common HTML footer here -->
+
+    <script src="main.js"></script>
+    <!-- FAQ ACCORDION SCRIPT -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    
+                    // Close other open items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('active')) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

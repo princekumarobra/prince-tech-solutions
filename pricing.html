@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Pricing & Packages - Prince Tech Solutions Pvt. Ltd.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* PRICING PAGE SPECIFIC STYLES (Add to style.css too, but included here for preview) */
+        .pricing-section .section-header { margin-bottom: 60px; }
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        .price-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            text-align: center;
+            border-top: 5px solid var(--secondary-color);
+            transition: transform 0.3s;
+        }
+        .price-card.featured {
+            border-top-color: var(--primary-color);
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        .price-card h3 {
+            color: var(--dark-color);
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .price-card .price {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            font-weight: 800;
+            margin: 15px 0;
+        }
+        .price-card .duration {
+            font-size: 1rem;
+            color: #777;
+            margin-bottom: 25px;
+        }
+        .price-card .feature-list {
+            text-align: left;
+            margin-bottom: 30px;
+            min-height: 200px;
+        }
+        .price-card .feature-list li {
+            padding: 8px 0;
+            border-bottom: 1px dotted var(--border-color);
+            font-size: 0.95rem;
+            color: #555;
+        }
+        .price-card .feature-list i {
+            color: var(--secondary-color);
+            margin-right: 10px;
+        }
+        .price-card .note {
+            font-size: 0.85rem;
+            color: #888;
+            margin-top: 15px;
+        }
+        .price-card .btn-outline { margin-top: 10px; }
+        .pricing-bottom-note {
+            text-align: center;
+            padding: 40px 0;
+            font-size: 1.1rem;
+            color: #444;
+        }
+        @media (max-width: 768px) {
+            .price-card.featured { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. Top Branding Bar (Common Layout - Repeat from index.html) -->
+    <!-- 2. NAVIGATION BAR (Common Layout - Repeat from index.html) -->
+    <!-- Note: For simplicity, I'm only including the main content. Use your full header/footer structure from index.html -->
+
+    <main>
+        <!-- Hero: Pricing -->
+        <header class="hero" style="background: var(--white); padding: 50px 0;">
+            <div class="container" style="text-align: center;">
+                <span class="subtitle">Simple & Transparent</span>
+                <h1 style="color: var(--dark-color); font-size: 2.5rem;">Website Packages – Clear Pricing</h1>
+                <p>Domain & Hosting charge alag se lagta hai. Yahan sirf humari **service/coding** ka fee hai.</p>
+            </div>
+        </header>
+
+        <!-- Pricing Packages -->
+        <section class="section pricing-section">
+            <div class="container">
+                <div class="pricing-grid">
+                    
+                    <!-- Card 1: Basic Website -->
+                    <div class="price-card">
+                        <h3>1. Basic Website</h3>
+                        <p class="duration">Upfront Cost (One-time)</p>
+                        <p class="price">₹7,999</p>
+                        <p>Perfect for quick business listing & contact.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Upto 5 Pages (Home, About, Contact, etc.)</li>
+                            <li><i class="fas fa-check"></i> Contact & WhatsApp Button</li>
+                            <li><i class="fas fa-check"></i> Responsive Design (Mobile Ready)</li>
+                            <li><i class="fas fa-check"></i> 7 Days Delivery</li>
+                            <li><i class="fas fa-times" style="color:#ff6b6b;"></i> No Gallery / Small Blog</li>
+                            <li><i class="fas fa-times" style="color:#ff6b6b;"></i> No Payment Gateway</li>
+                        </ul>
+                        <a href="payment.html#basic" class="btn btn-primary">Book Now</a>
+                        <a href="https://wa.me/919065885746" target="_blank" class="btn btn-outline">Talk on WhatsApp</a>
+                        <p class="note">**Note:** Domain & hosting extra (from ₹1500/yr)</p>
+                    </div>
+
+                    <!-- Card 2: Business Website (Featured) -->
+                    <div class="price-card featured">
+                        <h3>2. Business Website</h3>
+                        <p class="duration">Upfront Cost (One-time)</p>
+                        <p class="price">₹14,999</p>
+                        <p>Best for growing businesses needing detail & trust.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> 8-10 Pages (Services, Gallery, Blog)</li>
+                            <li><i class="fas fa-check"></i> Client / Team Section</li>
+                            <li><i class="fas fa-check"></i> Basic SEO Optimization</li>
+                            <li><i class="fas fa-check"></i> Fast Loading Speed</li>
+                            <li><i class="fas fa-check"></i> **Razorpay/UPI Integration Ready**</li>
+                            <li><i class="fas fa-check"></i> 10-15 Days Delivery</li>
+                        </ul>
+                        <a href="payment.html#business" class="btn btn-primary" style="background: #2e86de;">Book Now</a>
+                        <a href="https://wa.me/919065885746" target="_blank" class="btn btn-outline">Talk on WhatsApp</a>
+                        <p class="note">**Note:** Domain & hosting extra (from ₹2000/yr)</p>
+                    </div>
+
+                    <!-- Card 3: Govt / Result Portal -->
+                    <div class="price-card">
+                        <h3>3. Govt / Result Portal</h3>
+                        <p class="duration">Price depends on features</p>
+                        <p class="price">Custom</p>
+                        <p>High-traffic ready solution for exams, results, or government notices.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Dynamic Tables & Database Setup</li>
+                            <li><i class="fas fa-check"></i> Secure Admin Panel & Login</li>
+                            <li><i class="fas fa-check"></i> PDF Downloads & Admit Card Feature</li>
+                            <li><i class="fas fa-check"></i> Cloud Hosting Consultation</li>
+                            <li><i class="fas fa-check"></i> Priority Support</li>
+                            <li><i class="fas fa-check"></i> Custom Development</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary">Call to Discuss Plan</a>
+                        <a href="govt-bank.html" class="btn btn-outline">View Features</a>
+                        <p class="note">**Note:** Price depends on exact requirements.</p>
+                    </div>
+
+                </div>
+
+                <div class="pricing-bottom-note">
+                    <p>Domain & hosting aap chahe toh PTS se bhi le sakte hain, ya apne existing provider se. <br>For automated domain & hosting store, visit: <a href="https://store.fastupdate.online" target="_blank" style="color:var(--primary-color); font-weight:bold;">store.fastupdate.online</a></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- 3. FOOTER (Common Layout - Repeat from index.html) -->
+    <script src="main.js"></script>
+</body>
+</html>
