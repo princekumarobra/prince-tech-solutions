@@ -3,214 +3,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hosting & Domain - Prince Tech Solutions</title>
+    <title>Hosting & Domain - Prince Tech Solutions Pvt. Ltd.</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Page Specific Inline CSS for Pricing -->
-    <style>
-        .price-tag {
-            font-size: 2rem;
-            color: var(--primary-color);
-            font-weight: 800;
-            margin: 10px 0;
-        }
-        .price-sub {
-            font-size: 0.9rem;
-            color: #666;
-            font-weight: normal;
-        }
-        .domain-box {
-            background: #eef2f3;
-            padding: 30px;
-            border-radius: 10px;
-            margin-bottom: 40px;
-            text-align: center;
-        }
-        .domain-input {
-            padding: 12px;
-            width: 70%;
-            max-width: 400px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .check-btn {
-            padding: 12px 25px;
-            background: var(--dark-color);
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-        /* Feature List Styling inside Card */
-        .feature-list {
-            text-align: left;
-            padding-left: 0;
-            margin-top: 15px;
-            margin-bottom: 20px;
-        }
-        .feature-list li {
-            margin-bottom: 8px;
-            font-size: 0.95rem;
-            color: #555;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .feature-list li i {
-            color: #27ae60; /* Green Check */
-        }
-    </style>
 </head>
 <body id="top">
 
-    <!-- ===== NAVIGATION BAR (Same as Index) ===== -->
+    <!-- 1. Top Branding Bar (Master Plan Header) -->
+    <div class="top-brand-bar">
+        <div class="container top-bar-content">
+            <div class="branding-center">
+                <div class="brand-name">PRINCE TECH SOLUTIONS PVT. LTD.</div>
+                <div class="tagline">Web · Apps · Digital Services</div>
+            </div>
+            <a href="tel:+919065885746" class="call-btn-top">Call / WhatsApp</a>
+        </div>
+    </div>
+
+    <!-- ===== 2. NAVIGATION BAR (Master Plan Navbar) ===== -->
     <nav class="navbar">
         <div class="container nav-container">
+            <!-- Logo -->
             <a href="index.html" class="logo">
                 <img src="logo-pts.png" alt="PTS Logo" class="logo-img">
-                PTS <span>Solutions</span>
+                Prince Tech <span>Pvt. Ltd.</span>
             </a>
 
+            <!-- Hamburger Button -->
             <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
 
+            <!-- Menu Links (Master Plan Links) -->
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="service.html" class="nav-link">Services</a></li>
-                <li><a href="hosting-domain.html" class="nav-link active">Hosting</a></li>
+                <li class="dropdown-nav">
+                    <a href="service.html" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="service.html">Custom Website Services</a></li>
+                        <li><a href="hosting-domain.html" class="active">Hosting & Domain</a></li>
+                        <li><a href="govt-bank.html">Govt & Bank Websites</a></li>
+                        <li><a href="payment.html">Payments / Razorpay</a></li>
+                    </ul>
+                </li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
                 <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="clients.html" class="nav-link">Our Clients</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="dropdown-nav">
+                    <a href="privacy.html" class="nav-link">Policies <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="refund.html">Refund Policy</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                        <li><a href="script.html">Terms & Conditions</a></li>
+                    </ul>
+                </li>
                 <li><a href="tel:+919065885746" class="nav-btn">Call Now</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- ===== HERO HEADER ===== -->
-    <section class="hero" style="padding: 50px 0; text-align: center;">
-        <div class="container">
-            <h1 style="font-size: 2.5rem; color: var(--dark-color);">Domain & Hosting Setup</h1>
-            <p style="color: #666; max-width: 600px; margin: 10px auto;">
-                Hum aapke business ke liye best Domain (.com/.in) aur Fast Server select karke setup karte hain. 
-            </p>
-        </div>
-    </section>
-
-    <!-- ===== DOMAIN SEARCH DEMO ===== -->
-    <section class="section" style="padding-top: 0;">
-        <div class="container">
-            <div class="domain-box">
-                <h3>Find Your Perfect Domain Name</h3>
-                <p style="margin-bottom: 15px;">Enter your business name (e.g., princetech.com)</p>
-                
-                <!-- Fake Form for Demo -->
-                <form onsubmit="event.preventDefault(); alert('Please call +91-9065885746 to book this domain!');">
-                    <input type="text" class="domain-input" placeholder="Enter domain name..." required>
-                    <button type="submit" class="check-btn">Check Availability</button>
-                </form>
-                <p style="font-size: 0.8rem; margin-top: 10px; color: #888;">*Pricing depends on extension (.com, .in, .net)</p>
+    <main>
+        <!-- ===== HERO HEADER (Modified) ===== -->
+        <section class="hero" style="padding: 50px 0; text-align: center;">
+            <div class="container">
+                <h1 style="font-size: 2.5rem; color: var(--dark-color);">Domain & Hosting Setup</h1>
+                <p style="color: #666; max-width: 600px; margin: 10px auto;">
+                    Hum aapke business ke liye best Domain (.com/.in) aur Fast Server select karke setup karte hain. 
+                </p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ===== HOSTING PLANS (PRICING CARDS) ===== -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Hosting Packages</h2>
-                <p>Choose the best plan for your website needs.</p>
-            </div>
-
-            <div class="card-grid">
-                
-                <!-- Plan 1: Starter -->
-                <div class="card">
-                    <h3 style="color: var(--dark-color);">Starter Plan</h3>
-                    <p>Best for Personal / Small Shop</p>
-                    <div class="price-tag">₹2,499<span class="price-sub">/year*</span></div>
+        <!-- ===== DOMAIN SEARCH DEMO (Modified for JS) ===== -->
+        <section class="section" style="padding-top: 0;">
+            <div class="container">
+                <div class="domain-box">
+                    <h3>Find Your Perfect Domain Name (Demo)</h3>
+                    <p style="margin-bottom: 15px;">Enter your business name (e.g., princetech.com)</p>
                     
-                    <ul class="feature-list">
-                        <li><i class="fas fa-check-circle"></i> 1 Website (Static)</li>
-                        <li><i class="fas fa-check-circle"></i> Free .in Domain (1st yr)</li>
-                        <li><i class="fas fa-check-circle"></i> 5 GB SSD Storage</li>
-                        <li><i class="fas fa-check-circle"></i> Free SSL Certificate</li>
-                        <li><i class="fas fa-check-circle"></i> 24/7 Support</li>
-                    </ul>
-                    <a href="tel:+919065885746" class="btn btn-outline" style="width: 100%;">Order Now</a>
+                    <div class="domain-search-wrapper">
+                        <input type="text" id="domain-input" class="domain-input" placeholder="Enter domain name..." required>
+                        <button id="check-domain-btn" class="check-btn">Check Demo Availability</button>
+                    </div>
+                    <p id="search-result" class="search-result-message" style="font-size: 1rem; margin-top: 15px;"></p>
+                    <p style="font-size: 0.8rem; margin-top: 10px; color: #888;">*Click 'Order Now' to view real prices and purchase on our reseller store.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== HOSTING PLANS (PRICING CARDS) ===== -->
+        <section class="section hosting-plans-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Hosting Packages</h2>
+                    <p>Choose the best plan for your website needs.</p>
                 </div>
 
-                <!-- Plan 2: Business (Popular) -->
-                <div class="card" style="border-top: 4px solid var(--primary-color); transform: scale(1.02);">
-                    <div style="background: var(--primary-color); color: white; display: inline-block; padding: 2px 10px; border-radius: 10px; font-size: 0.8rem; margin-bottom: 10px;">MOST POPULAR</div>
-                    <h3 style="color: var(--dark-color);">Business Bundle</h3>
-                    <p>For Coaching / Clinic / Company</p>
-                    <div class="price-tag">₹4,999<span class="price-sub">/year*</span></div>
+                <div class="card-grid">
                     
-                    <ul class="feature-list">
-                        <li><i class="fas fa-check-circle"></i> Dynamic Website (5-7 Pages)</li>
-                        <li><i class="fas fa-check-circle"></i> Free .com / .in Domain</li>
-                        <li><i class="fas fa-check-circle"></i> Unlimited Bandwidth</li>
-                        <li><i class="fas fa-check-circle"></i> Business Email (info@...)</li>
-                        <li><i class="fas fa-check-circle"></i> WhatsApp Integration</li>
-                    </ul>
-                    <a href="tel:+919065885746" class="btn btn-primary" style="width: 100%;">Order Now</a>
-                </div>
+                    <!-- Plan 1: Starter -->
+                    <div class="card plan-card">
+                        <h3 style="color: var(--dark-color);">Starter Plan</h3>
+                        <p>Best for Personal / Small Shop</p>
+                        <div class="price-tag">₹2,499<span class="price-sub">/year*</span></div>
+                        
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> 1 Website (Static)</li>
+                            <li><i class="fas fa-check-circle"></i> Free .in Domain (1st yr)</li>
+                            <li><i class="fas fa-check-circle"></i> 5 GB SSD Storage</li>
+                            <li><i class="fas fa-check-circle"></i> Free SSL Certificate</li>
+                            <li><i class="fas fa-check-circle"></i> 24/7 Support</li>
+                        </ul>
+                        <a href="https://store.fastupdate.online/starter-plan" target="_blank" class="btn btn-outline" style="width: 100%;">Order Now</a>
+                    </div>
 
-                <!-- Plan 3: High Traffic -->
-                <div class="card">
-                    <h3 style="color: var(--dark-color);">Pro / Govt Portal</h3>
-                    <p>For Results / News / High Traffic</p>
-                    <div class="price-tag">₹9,999<span class="price-sub">/year*</span></div>
-                    
-                    <ul class="feature-list">
-                        <li><i class="fas fa-check-circle"></i> Heavy Traffic Server</li>
-                        <li><i class="fas fa-check-circle"></i> Database & Admin Panel</li>
-                        <li><i class="fas fa-check-circle"></i> Daily Backups</li>
-                        <li><i class="fas fa-check-circle"></i> AdSense Ready Setup</li>
-                        <li><i class="fas fa-check-circle"></i> Priority Support</li>
-                    </ul>
-                    <a href="tel:+919065885746" class="btn btn-outline" style="width: 100%;">Order Now</a>
-                </div>
+                    <!-- Plan 2: Business (Popular) -->
+                    <div class="card plan-card featured-plan" style="border-top: 4px solid var(--primary-color);">
+                        <div class="popular-tag">MOST POPULAR</div>
+                        <h3 style="color: var(--dark-color);">Business Bundle</h3>
+                        <p>For Coaching / Clinic / Company</p>
+                        <div class="price-tag">₹4,999<span class="price-sub">/year*</span></div>
+                        
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> Dynamic Website (5-7 Pages)</li>
+                            <li><i class="fas fa-check-circle"></i> Free .com / .in Domain</li>
+                            <li><i class="fas fa-check-circle"></i> Unlimited Bandwidth</li>
+                            <li><i class="fas fa-check-circle"></i> Business Email (info@...)</li>
+                            <li><i class="fas fa-check-circle"></i> WhatsApp Integration</li>
+                        </ul>
+                        <a href="https://store.fastupdate.online/business-plan" target="_blank" class="btn btn-primary" style="width: 100%;">Order Now</a>
+                    </div>
 
-            </div>
-        </div>
-    </section>
+                    <!-- Plan 3: High Traffic -->
+                    <div class="card plan-card">
+                        <h3 style="color: var(--dark-color);">Pro / Govt Portal</h3>
+                        <p>For Results / News / High Traffic</p>
+                        <div class="price-tag">₹9,999<span class="price-sub">/year*</span></div>
+                        
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> Heavy Traffic Server</li>
+                            <li><i class="fas fa-check-circle"></i> Database & Admin Panel</li>
+                            <li><i class="fas fa-check-circle"></i> Daily Backups</li>
+                            <li><i class="fas fa-check-circle"></i> AdSense Ready Setup</li>
+                            <li><i class="fas fa-check-circle"></i> Priority Support</li>
+                        </ul>
+                        <a href="tel:+919065885746" class="btn btn-outline" style="width: 100%;">Call for Custom Plan</a>
+                    </div>
 
-    <!-- ===== WHY CHOOSE US ===== -->
-    <section class="section" style="background: #f9f9f9; margin-top: 40px;">
-        <div class="container">
-            <div class="section-header">
-                <h2>Why Choose PTS Hosting?</h2>
-            </div>
-            <div class="card-grid">
-                <div class="card" style="padding: 20px;">
-                    <i class="fas fa-rocket" style="font-size: 2rem; color: var(--secondary-color); margin-bottom: 10px;"></i>
-                    <h4>99.9% Uptime</h4>
-                    <p>Your website will always be live without downtime.</p>
-                </div>
-                <div class="card" style="padding: 20px;">
-                    <i class="fas fa-lock" style="font-size: 2rem; color: var(--secondary-color); margin-bottom: 10px;"></i>
-                    <h4>Secure (SSL)</h4>
-                    <p>Padlock icon (HTTPS) included for customer trust.</p>
-                </div>
-                <div class="card" style="padding: 20px;">
-                    <i class="fas fa-headset" style="font-size: 2rem; color: var(--secondary-color); margin-bottom: 10px;"></i>
-                    <h4>Local Support</h4>
-                    <p>Call or WhatsApp anytime for help in Hindi/English.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ===== FOOTER (Same as Index) ===== -->
+        <!-- ===== WHY CHOOSE US (Master Plan) ===== -->
+        <section class="section why-choose-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Why Choose PTS Hosting/Domain Services?</h2>
+                </div>
+                <div class="card-grid">
+                    <div class="card" style="padding: 20px;">
+                        <i class="fas fa-rocket" style="font-size: 2rem; color: var(--secondary-color); margin-bottom: 10px;"></i>
+                        <h4>99.9% Uptime</h4>
+                        <p>Your website will always be live without downtime.</p>
+                    </div>
+                    <div class="card" style="padding: 20px;">
+                        <i class="fas fa-lock" style="font-size: 2rem; color: var(--secondary-color); margin-bottom: 10px;"></i>
+                        <h4>Secure (SSL)</h4>
+                        <p>Padlock icon (HTTPS) included for customer trust.</p>
+                    </div>
+                    <div class="card" style="padding: 20px;">
+                        <i class="fas fa-headset" style="font-size: 2rem; color: var(--secondary-color); margin-bottom: 10px;"></i>
+                        <h4>Local Setup & Support</h4>
+                        <p>PTS team handles full setup and support in Hindi/English.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== 3. FOOTER (Master Plan Footer) ===== -->
     <footer>
-        <div class="container footer-content">
-            <p>Designed & Developed by <strong>Prince Tech Solutions (PTS)</strong></p>
-            <p>© 2025 All Rights Reserved. Aurangabad, Bihar.</p>
+        <div class="container footer-grid">
+            
+            <!-- Col 1: PTS Address -->
+            <div class="footer-col address-col">
+                <h4>Prince Tech Solutions Pvt. Ltd.</h4>
+                <p>Near Obra Block, Pani Tanki ke samne,<br> Aurangabad, Bihar – 824124, India</p>
+                <p>Mobile: +91 90658 85746</p>
+                <p>Email: princekumar73678852@gmail.com</p>
+            </div>
+
+            <!-- Col 2: Important Links -->
+            <div class="footer-col links-col">
+                <h4>Important Links</h4>
+                <ul>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="hosting-domain.html">Hosting & Domain</a></li>
+                    <li><a href="payment.html">Payment / Razorpay</a></li>
+                    <li><a href="govt-bank.html">Govt & Bank Websites</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Policies -->
+            <div class="footer-col policies-col">
+                <h4>Policies</h4>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="refund.html">Refund Policy</a></li>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                    <li><a href="script.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Footer Bottom -->
+        <div class="footer-bottom-text">
+            <a href="#top" class="back-to-top">↑ Back to Top</a>
+            <p>Designed & Developed by **Prince Tech Solutions Pvt. Ltd.**</p>
+            <p>© 2025 All Rights Reserved.</p>
         </div>
     </footer>
 
