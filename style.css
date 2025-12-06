@@ -13,6 +13,7 @@
     --light-color: #f4f7f6; /* Main Background */
     --white: #ffffff;
     --border-color: #e0e0e0;
+    --green-blink: #4caf50; /* Green for Blinking Button */
 }
 
 body {
@@ -60,7 +61,7 @@ h1, h2, h3, h4 { color: var(--dark-color); }
 .card:hover { transform: translateY(-5px); border-color: var(--primary-color); }
 
 
-/* ================= 1. TOP BRANDING BAR ================= */
+/* ================= 1. TOP BRANDING BAR (3D Text & Blinking Button) ================= */
 .top-brand-bar {
     background: linear-gradient(90deg, #ff6b6b, #ff9f43);
     color: var(--white);
@@ -72,13 +73,34 @@ h1, h2, h3, h4 { color: var(--dark-color); }
     align-items: center;
     font-size: 0.9rem;
 }
-.brand-name { font-weight: bold; font-size: 1.1em; }
+.premium-heading {
+    /* 3D/Premium IT Agency Look */
+    font-weight: 900;
+    font-size: 1.1em;
+    letter-spacing: 0.5px;
+    /* Soft shadow/gradient effect */
+    color: var(--white);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2), 
+                 -1px -1px 2px rgba(255,255,255,0.1);
+}
 .tagline { font-size: 0.7em; }
 .call-btn-top {
-    background: rgba(0,0,0,0.2);
+    background: var(--green-blink);
+    color: var(--white);
     padding: 5px 12px;
     border-radius: 20px;
     font-weight: 500;
+    transition: background-color 0.3s;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+/* Blinking Animation */
+@keyframes blink {
+    0% { box-shadow: 0 0 10px var(--green-blink), 0 0 20px var(--green-blink); }
+    50% { box-shadow: 0 0 5px var(--green-blink); }
+    100% { box-shadow: 0 0 10px var(--green-blink), 0 0 20px var(--green-blink); }
+}
+.blink-green {
+    animation: blink 2.5s infinite;
 }
 
 
@@ -122,35 +144,52 @@ h1, h2, h3, h4 { color: var(--dark-color); }
 .menu-toggle { display: none; cursor: pointer; }
 .bar { display: block; width: 25px; height: 3px; margin: 5px auto; background-color: var(--dark-color); transition: all 0.3s ease-in-out; }
 
-/* ================= 3. HERO SECTION (INDEX BG + TINT/BLUR) ================= */
-.hero-with-bg { 
-    padding: 80px 0; 
+/* ================= 3. HERO SECTION (VIDEO BACKGROUND) ================= */
+.hero-with-bg-video {
+    padding: 0;
+    height: 70vh; /* Adjust as needed */
     position: relative;
-    background: url('hero-pts.png') no-repeat center center;
-    background-size: cover;
-    color: var(--white);
+    overflow: hidden; 
+    /* Fallback/Mobile Background */
+    background: url('hero-pts.png') no-repeat center center/cover;
 }
+
+.hero-video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
 .hero-overlay {
     position: absolute; top: 0; left: 0; right: 0; bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.6); /* Dark Tint */
+    backdrop-filter: blur(2px); /* Blur Effect */
     z-index: 1;
 }
+
 .hero-content { 
     position: relative; z-index: 2;
+    height: 100%;
     display: flex; align-items: center; gap: 40px; flex-wrap: wrap;
     max-width: 800px; margin-left: 0; padding-left: 20px;
 }
 .hero-content .hero-text { flex: 1; }
-.hero-with-bg .subtitle { color: #f9f9f9; }
-.hero-with-bg h1 { color: var(--white); font-size: 3rem; }
-.hero-with-bg p { color: rgba(255, 255, 255, 0.9); }
-.hero-with-bg .hero-tags span { background: rgba(255, 255, 255, 0.1); color: var(--white); }
+.hero-with-bg-video .subtitle { color: #f9f9f9; }
+.hero-with-bg-video h1 { color: var(--white); font-size: 3rem; }
+.hero-with-bg-video p { color: rgba(255, 255, 255, 0.9); }
+.hero-with-bg-video .hero-tags span { background: rgba(255, 255, 255, 0.1); color: var(--white); }
 
 
 /* ================= 4. HOME & SERVICE PAGE STYLES ================= */
 .icon-circle { width: 60px; height: 60px; background: #fff0f0; color: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin: 0 auto 20px; }
-.why-pts-section { background-color: #f0f0f0; }
+.why-pts-section { background-color: var(--light-color); }
 .why-pts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
 .why-pts-card { background: var(--white); padding: 20px; border-radius: 8px; text-align: center; font-weight: 600; color: var(--dark-color); box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
 .why-pts-card i { color: var(--secondary-color); font-size: 1.5rem; margin-bottom: 10px; display: block; }
@@ -245,6 +284,11 @@ h1, h2, h3, h4 { color: var(--dark-color); }
 .location-section { text-align: center; }
 .map-placeholder { margin-top: 30px; }
 .map-placeholder i { font-size: 1.5rem; color: #777; margin-right: 10px; }
+.clients-logo-grid { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 30px; margin-top: 40px; }
+.client-logo-item { padding: 15px; border: 1px solid var(--border-color); border-radius: 5px; background: #fcfcfc; transition: box-shadow 0.3s; }
+.client-logo-item:hover { box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+.client-logo-item img { width: 150px; height: auto; max-height: 50px; object-fit: contain; filter: grayscale(80%); transition: filter 0.3s; }
+.client-logo-item:hover img { filter: grayscale(0%); }
 
 
 /* ================= ABOUT PAGE STYLES ================= */
@@ -337,8 +381,9 @@ footer { background: var(--dark-color); color: #ccc; padding: 50px 0 20px; }
     .dropdown-menu li a { padding: 5px 10px; }
     
     /* Content Fixes */
-    .hero-with-bg { padding: 50px 0; }
-    .hero-with-bg h1 { font-size: 2rem; }
+    .hero-with-bg-video { padding: 0; height: 60vh; }
+    .hero-video-bg { display: none; } /* Mobile par video hide kar dijiye */
+    .hero-with-bg-video h1 { font-size: 2rem; }
     .hero-content { flex-direction: column; text-align: center; }
     .hero-buttons { justify-content: center; }
     .footer-grid { grid-template-columns: 1fr; text-align: center; }
