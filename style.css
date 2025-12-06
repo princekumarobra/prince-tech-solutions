@@ -10,7 +10,7 @@
     --primary-color: #ff6b6b; /* Orange/Red Mix - CTA */
     --secondary-color: #2e86de; /* Blue - Subtitle/Highlight */
     --dark-color: #222f3e; /* Text/Heading */
-    --light-color: #f4f7f6; /* Main Background (SAM Softtech style) */
+    --light-color: #f4f7f6; /* Main Background (SAM Softech style) */
     --white: #ffffff;
     --border-color: #e0e0e0;
     --green-blink: #4caf50; /* Green for Blinking Button */
@@ -259,7 +259,7 @@ h1, h2, h3, h4 { color: var(--dark-color); }
 .direct-contact { 
     background: #eef7ff; 
     border-top: 5px solid var(--secondary-color);
-    text-align: left; /* FIX: Left align for details */
+    text-align: left; 
 }
 .quick-enquiry-card { 
     background: #ffeded; 
