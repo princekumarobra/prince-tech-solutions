@@ -3,36 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Prince Tech Solutions</title>
+    <title>My Recent Work | Prince Tech Solutions</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Inline CSS for Portfolio Specifics -->
-    <style>
-        .portfolio-img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #eee;
-        }
-        .category-badge {
-            background: #e1f5fe;
-            color: var(--secondary-color);
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: bold;
-            display: inline-block;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-        }
-    </style>
 </head>
 <body id="top">
 
-    <!-- ===== NAVIGATION BAR ===== -->
+    <!-- ===== NAVBAR ===== -->
     <nav class="navbar">
         <div class="container nav-container">
             <a href="index.html" class="logo">
@@ -51,86 +28,183 @@
                 <li><a href="service.html" class="nav-link">Services</a></li>
                 <li><a href="hosting-domain.html" class="nav-link">Hosting</a></li>
                 <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
-                <li><a href="govt-bank.html" class="nav-link">Govt & Bank</a></li>
+                <li><a href="govt-bank.html" class="nav-link">Govt &amp; Bank</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- ===== HEADER ===== -->
-    <section class="hero" style="padding: 50px 0; text-align: center;">
-        <div class="container">
-            <h1 style="font-size: 2.5rem; color: var(--dark-color);">My Recent Work</h1>
-            <p style="color: #666; max-width: 600px; margin: 10px auto;">
+    <!-- ===== HERO / HEADING ===== -->
+    <section class="section" style="padding-bottom:40px;">
+        <div class="container" style="text-align:center;">
+            <h1 style="font-size:2.5rem; margin-bottom:10px;">My Recent Work</h1>
+            <p style="color:#666; max-width:700px; margin:0 auto;">
                 Check out some of the live projects delivered to happy clients.
             </p>
         </div>
     </section>
 
-    <!-- ===== PORTFOLIO GRID ===== -->
-    <section class="section" style="padding-top: 10px;">
+    <!-- ===== PORTFOLIO CARDS ===== -->
+    <section class="section portfolio-grid-section" style="padding-top:0;">
         <div class="container">
-            
-            <div class="card-grid">
+            <div class="portfolio-grid">
 
-                <!-- Project 1: Govt Portal -->
-                <div class="card" style="text-align: left;">
-                    <!-- Image -->
-                    <img src="hero-pts.png" alt="Govt Job Portal" class="portfolio-img">
-                    
-                    <span class="category-badge">Govt Portal</span>
-                    <h3>Sarkari Exam & Result Portal</h3>
-                    <p style="margin-bottom: 15px;">Fast loading portal with Admit Card download, Result checking, and Admin Panel features.</p>
-                    <a href="#" class="btn btn-outline" style="padding: 8px 20px; font-size: 0.9rem;">View Demo</a>
+                <!-- CARD 1 – Govt Result Portal -->
+                <div class="portfolio-card">
+                    <img src="project-govt.png" alt="Govt Job / Result Portal" class="project-image">
+                    <div class="card-content">
+                        <span class="project-tag">GOVT PORTAL</span>
+                        <h3>Sarkari Exam &amp; Result Portal</h3>
+                        <p>
+                            Fast loading portal with Admit Card download, Result checking, and Admin Panel features.
+                        </p>
+                        <p style="font-size:0.8rem; color:#999; margin-bottom:8px;">
+                            Live Website: <strong>blog.fastupdate.online</strong>
+                        </p>
+                        <div style="margin-top:10px;">
+                            <a href="https://blog.fastupdate.online" target="_blank"
+                               class="btn btn-primary btn-small" style="margin-right:8px;">
+                                View Demo
+                            </a>
+                            <a href="https://wa.me/919065885746?text=Hi%20Prince,%20mujhe%20Govt%20Result%20Portal%20jaisa%20website%20chahiye."
+                               target="_blank"
+                               class="btn btn-outline btn-small">
+                                Similar Website Chahiye
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Project 2: Coaching -->
-                <div class="card" style="text-align: left;">
-                    <img src="meeting1.png" alt="Coaching Website" class="portfolio-img">
-                    
-                    <span class="category-badge">Education</span>
-                    <h3>Coaching Institute Website</h3>
-                    <p style="margin-bottom: 15px;">Complete website for Coaching with Gallery, Faculty List, and Student Enquiry Form.</p>
-                    <a href="#" class="btn btn-outline" style="padding: 8px 20px; font-size: 0.9rem;">View Demo</a>
+                <!-- CARD 2 – Coaching / Institute -->
+                <div class="portfolio-card">
+                    <img src="project-coaching.png" alt="Coaching Institute Website" class="project-image">
+                    <div class="card-content">
+                        <span class="project-tag">EDUCATION</span>
+                        <h3>Coaching Institute Website</h3>
+                        <p>
+                            Complete website for coaching with Courses, Gallery, Faculty List, and Online Enquiry Form.
+                        </p>
+                        <p style="font-size:0.8rem; color:#999; margin-bottom:8px;">
+                            Type: <strong>Custom Design Sample</strong>
+                        </p>
+                        <div style="margin-top:10px;">
+                            <a href="#" class="btn btn-primary btn-small" style="margin-right:8px;">
+                                View Demo Layout
+                            </a>
+                            <a href="https://wa.me/919065885746?text=Hi%20Prince,%20Coaching%20Institute%20ke%20liye%20website%20chahiye."
+                               target="_blank"
+                               class="btn btn-outline btn-small">
+                                Coaching Site Banwana Hai
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Project 3: E-Commerce -->
-                <div class="card" style="text-align: left;">
-                    <img src="meeting2.png" alt="Shop Website" class="portfolio-img">
-                    
-                    <span class="category-badge">E-Commerce</span>
-                    <h3>Local Shop / Business</h3>
-                    <p style="margin-bottom: 15px;">Product catalog website. Customers can see items and order directly via WhatsApp.</p>
-                    <a href="#" class="btn btn-outline" style="padding: 8px 20px; font-size: 0.9rem;">View Demo</a>
+                <!-- CARD 3 – Local Shop / Business -->
+                <div class="portfolio-card">
+                    <img src="project-business.png" alt="Local Shop / Business Website" class="project-image">
+                    <div class="card-content">
+                        <span class="project-tag">BUSINESS</span>
+                        <h3>Local Shop / Business</h3>
+                        <p>
+                            Product / service showcase with enquiry on WhatsApp, opening hours &amp; Google Map section.
+                        </p>
+                        <p style="font-size:0.8rem; color:#999; margin-bottom:8px;">
+                            Example Client: <strong>annapurnalogistics.site</strong>
+                        </p>
+                        <div style="margin-top:10px;">
+                            <a href="https://annapurnalogistics.site" target="_blank"
+                               class="btn btn-primary btn-small" style="margin-right:8px;">
+                                View Demo
+                            </a>
+                            <a href="https://wa.me/919065885746?text=Hi%20Prince,%20mujhe%20Local%20Business%20website%20chahiye."
+                               target="_blank"
+                               class="btn btn-outline btn-small">
+                                Mere Dukan Ke Liye
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Project 4: Blog -->
-                <div class="card" style="text-align: left;">
-                    <img src="meeting3.png" alt="News Blog" class="portfolio-img">
-                    
-                    <span class="category-badge">Blogging</span>
-                    <h3>News & Job Update Blog</h3>
-                    <p style="margin-bottom: 15px;">AdSense ready blog setup with SEO optimization and social sharing features.</p>
-                    <a href="#" class="btn btn-outline" style="padding: 8px 20px; font-size: 0.9rem;">View Demo</a>
+                <!-- CARD 4 – News & Blog -->
+                <div class="portfolio-card">
+                    <img src="project-blog.png" alt="News & Job Update Blog" class="project-image">
+                    <div class="card-content">
+                        <span class="project-tag">BLOGGING</span>
+                        <h3>News &amp; Job Update Blog</h3>
+                        <p>
+                            AdSense ready blog setup with SEO optimization and social sharing features.
+                        </p>
+                        <p style="font-size:0.8rem; color:#999; margin-bottom:8px;">
+                            Live Website: <strong>blog.fastupdate.online</strong>
+                        </p>
+                        <div style="margin-top:10px;">
+                            <a href="https://blog.fastupdate.online" target="_blank"
+                               class="btn btn-primary btn-small" style="margin-right:8px;">
+                                View Demo
+                            </a>
+                            <a href="https://wa.me/919065885746?text=Hi%20Prince,%20Job%20/%20News%20Blog%20website%20chahiye."
+                               target="_blank"
+                               class="btn btn-outline btn-small">
+                                Blog Website Chahiye
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- ===== CONTACT CTA ===== -->
-    <section class="contact-strip">
-        <div class="container">
-            <h2>Want a similar website?</h2>
-            <p>Select a design you like and we will build it for you.</p>
-            <a href="tel:+919065885746" class="btn btn-white">Call Now</a>
+    <!-- ===== BOTTOM CTA ===== -->
+    <section class="section" style="padding-top:40px; padding-bottom:60px;">
+        <div class="container" style="max-width:700px;">
+            <h3 style="margin-bottom:10px;">Want a similar website?</h3>
+            <p style="color:#555; margin-bottom:20px;">
+                Koi design pasand aaya? Bas call ya WhatsApp kijiye, hum aapke business ke hisaab se
+                same quality ka website bana denge.
+            </p>
+            <a href="https://wa.me/919065885746?text=Hi%20Prince,%20mujhe%20portfolio%20me%20dikhaye%20gaye%20jaisa%20website%20banwana%20hai."
+               target="_blank"
+               class="btn btn-primary btn-small" style="margin-right:10px;">
+                WhatsApp Now
+            </a>
+            <a href="tel:+919065885746" class="btn btn-outline btn-small">
+                Call Now
+            </a>
         </div>
     </section>
 
     <!-- ===== FOOTER ===== -->
     <footer>
-        <div class="container footer-content">
-            <p>Designed & Developed by <strong>Prince Tech Solutions (PTS)</strong></p>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4>Prince Tech Solutions Pvt. Ltd.</h4>
+                <p>Near Obra Block, Pani Tanki ke samne,<br> Aurangabad, Bihar – 824124</p>
+                <p>Mobile: <strong>+91 90658 85746</strong></p>
+            </div>
+            <div class="footer-col">
+                <h4>Important Links</h4>
+                <ul>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="hosting-domain.html">Hosting &amp; Domain</a></li>
+                    <li><a href="payment.html">Payments / Razorpay</a></li>
+                    <li><a href="govt-bank.html">Govt &amp; Bank Websites</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Policies</h4>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="refund.html">Refund Policy</a></li>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                    <li><a href="script.html">Terms &amp; Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom-text">
+            <a href="#top" class="back-to-top">↑ Back to Top</a>
+            <p>Designed &amp; Developed by <strong>Prince Tech Solutions Pvt. Ltd.</strong></p>
             <p>© 2025 All Rights Reserved.</p>
         </div>
     </footer>
