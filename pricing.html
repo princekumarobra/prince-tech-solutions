@@ -19,13 +19,12 @@
     <meta property="og:description" content="Simple, clean & fast websites for your business. School/college, resort/hotel, business, result portal – sabke liye ready packages.">
     <meta property="og:url" content="https://fastupdate.online/pricing">
     <meta property="og:site_name" content="Prince Tech Solutions Pvt. Ltd.">
-    <!-- Yahan apna hero/banner image URL use karein -->
     <meta property="og:image" content="https://fastupdate.online/assets/images/pts-pricing-banner.jpg">
 
     <!-- TWITTER CARD -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Website Packages – Clear Pricing | Prince Tech Solutions">
-    <meta name="twitter:description" content="Transparent website pricing – basic website, business website, gov/result portal & more.">
+    <meta name="twitter:description" content="Transparent website pricing – basic website, business website, gov/result portal & custom development.">
     <meta name="twitter:image" content="https://fastupdate.online/assets/images/pts-pricing-banner.jpg">
 
     <!-- FAVICON (optional) -->
@@ -35,7 +34,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- PRICING PAGE SPECIFIC STYLES (You can move this into style.css) -->
+    <!-- PRICING PAGE SPECIFIC STYLES -->
     <style>
         .pricing-section .section-header { margin-bottom: 60px; }
         .pricing-grid {
@@ -50,12 +49,32 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.05);
             text-align: center;
             border-top: 5px solid var(--secondary-color);
-            transition: transform 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
         }
         .price-card.featured {
             border-top-color: var(--primary-color);
             transform: scale(1.05);
             box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        .price-card.offer-card {
+            border-top-color: #ff9800;
+        }
+        .price-badge {
+            position: absolute;
+            top: 15px;
+            right: -55px;
+            background: var(--primary-color);
+            color: #fff;
+            padding: 6px 60px;
+            transform: rotate(45deg);
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .price-card.offer-card .price-badge {
+            background: #ff9800;
         }
         .price-card h3 {
             color: var(--dark-color);
@@ -67,6 +86,11 @@
             color: var(--primary-color);
             font-weight: 800;
             margin: 15px 0;
+        }
+        .price-card .old-price {
+            font-size: 1rem;
+            text-decoration: line-through;
+            color: #999;
         }
         .price-card .duration {
             font-size: 1rem;
@@ -102,6 +126,31 @@
         }
         @media (max-width: 768px) {
             .price-card.featured { transform: scale(1); }
+        }
+
+        /* New Year Offer strip */
+        .offer-strip {
+            background: linear-gradient(135deg, #ff9800, #ff5e57);
+            color: #fff;
+            text-align: center;
+            padding: 18px 10px;
+        }
+        .offer-strip h2 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+        .offer-strip p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+        .countdown {
+            margin-top: 8px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .countdown span {
+            display: inline-block;
+            min-width: 50px;
         }
     </style>
 
@@ -244,22 +293,57 @@
     </script>
 </head>
 <body>
-    <!-- Aapka normal header / navbar yaha aayega (same as index.html) -->
+    <!-- Yahan aapka global navbar (index.html jaisa) aa sakta hai -->
 
     <main>
         <!-- Hero: Pricing -->
         <header class="hero" style="background: var(--white); padding: 50px 0;">
             <div class="container" style="text-align: center;">
-                <span class="subtitle">Simple & Transparent</span>
+                <span class="subtitle">Simple &amp; Transparent</span>
                 <h1 style="color: var(--dark-color); font-size: 2.5rem;">Website Packages – Clear Pricing</h1>
                 <p>Domain &amp; Hosting charge alag se lagta hai. Yahan sirf humari <strong>service / coding</strong> ka fee hai.</p>
             </div>
         </header>
 
+        <!-- New Year Offer Strip -->
+        <section class="offer-strip">
+            <div class="container">
+                <h2>🎉 Happy New Year Offer – 1 January 2026 Tak!</h2>
+                <p>Business Website package par special discount. Limited time ke liye hi valid hai.</p>
+                <div class="countdown" id="ny-countdown">
+                    <span id="cd-days">00</span>d :
+                    <span id="cd-hours">00</span>h :
+                    <span id="cd-mins">00</span>m :
+                    <span id="cd-secs">00</span>s
+                </div>
+            </div>
+        </section>
+
         <!-- Pricing Packages -->
         <section class="section pricing-section">
             <div class="container">
                 <div class="pricing-grid">
+
+                    <!-- Offer Card: New Year Business Website -->
+                    <div class="price-card offer-card">
+                        <div class="price-badge">New Year 2026</div>
+                        <h3>⭐ New Year Business Website Offer</h3>
+                        <p class="duration">Valid till 1 January 2026</p>
+                        <p class="old-price">Old Price: ₹14,999</p>
+                        <p class="price">₹11,999</p>
+                        <p>Business Website same features, limited time special price.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> 8–10 Pages (Services, Gallery, Blog)</li>
+                            <li><i class="fas fa-check"></i> Client / Team Section</li>
+                            <li><i class="fas fa-check"></i> Basic SEO Optimization</li>
+                            <li><i class="fas fa-check"></i> Fast Loading Speed</li>
+                            <li><i class="fas fa-check"></i> Razorpay / UPI Integration Ready</li>
+                            <li><i class="fas fa-check"></i> 10–15 Days Delivery</li>
+                        </ul>
+                        <a href="payment.html#newyear" class="btn btn-primary">Book New Year Offer</a>
+                        <a href="https://wa.me/919065885746?text=New%20Year%20Business%20Website%20Offer%20details%20please" target="_blank" class="btn btn-outline">WhatsApp Details</a>
+                        <p class="note"><strong>Note:</strong> Offer automatically close ho jayega 1 January 2026 ke baad.</p>
+                    </div>
                     
                     <!-- Card 1: Basic Website -->
                     <div class="price-card">
@@ -280,10 +364,10 @@
                         <p class="note"><strong>Note:</strong> Domain &amp; hosting extra (from ₹1500/yr)</p>
                     </div>
 
-                    <!-- Card 2: Business Website (Featured) -->
+                    <!-- Card 2: Business Website (Standard Price) -->
                     <div class="price-card featured">
                         <h3>2. Business Website</h3>
-                        <p class="duration">Upfront Cost (One-time)</p>
+                        <p class="duration">Normal Price (Offer ke baad)</p>
                         <p class="price">₹14,999</p>
                         <p>Best for growing businesses needing detail &amp; trust.</p>
                         <ul class="feature-list">
@@ -335,6 +419,48 @@
     </main>
 
     <!-- FOOTER (same as index.html) -->
+    <script>
+        // New Year Countdown (till 1 Jan 2026, 00:00)
+        (function () {
+            var endTime = new Date("2026-01-01T00:00:00+05:30").getTime();
+            var daysEl = document.getElementById("cd-days");
+            var hoursEl = document.getElementById("cd-hours");
+            var minsEl = document.getElementById("cd-mins");
+            var secsEl = document.getElementById("cd-secs");
+
+            if (!daysEl) return;
+
+            function updateCountdown() {
+                var now = new Date().getTime();
+                var diff = endTime - now;
+
+                if (diff <= 0) {
+                    daysEl.innerText = "00";
+                    hoursEl.innerText = "00";
+                    minsEl.innerText = "00";
+                    secsEl.innerText = "00";
+                    return;
+                }
+
+                var seconds = Math.floor(diff / 1000);
+                var days = Math.floor(seconds / (60 * 60 * 24));
+                seconds -= days * 60 * 60 * 24;
+                var hours = Math.floor(seconds / (60 * 60));
+                seconds -= hours * 60 * 60;
+                var mins = Math.floor(seconds / 60);
+                seconds -= mins * 60;
+
+                daysEl.innerText = String(days).padStart(2, "0");
+                hoursEl.innerText = String(hours).padStart(2, "0");
+                minsEl.innerText = String(mins).padStart(2, "0");
+                secsEl.innerText = String(seconds).padStart(2, "0");
+            }
+
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+        })();
+    </script>
+
     <script src="main.js"></script>
 </body>
 </html>
