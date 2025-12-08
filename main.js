@@ -1,72 +1,69 @@
-document.addEventListener('DOMContentLoaded', () => {
+// main.js  – mobile menu + dropdown + hosting search
 
-  const mobileMenuBtn = document.getElementById('mobile-menu');
-  const navMenu = document.querySelector('.nav-menu');
-  const dropdownNavs = document.querySelectorAll('.dropdown-nav');
+document.addEventListener('DOMContentLoaded', function () {
 
-  /* =========== 1. HAMBURGER TOGGLER =========== */
+  /* ================= MOBILE MENU ================= */
+  const mobileMenuBtn = document.getElementById('mobile-menu');   // <div id="mobile-menu" class="menu-toggle">
+  const navMenu       = document.querySelector('.nav-menu');      // <ul class="nav-menu">
+  const dropdownNavs  = document.querySelectorAll('.dropdown-nav');
+
   if (mobileMenuBtn && navMenu) {
 
-    // Open / Close mobile menu
-    mobileMenuBtn.addEventListener('click', () => {
-      // Button animation (CSS: .menu-toggle.is-active ...)
+    // 1. Hamburger open/close
+    mobileMenuBtn.addEventListener('click', function () {
+      // Button lines animate (CSS: .menu-toggle.is-active ...)
       mobileMenuBtn.classList.toggle('is-active');
 
       // Menu open/close (CSS: .nav-menu.open ...)
       navMenu.classList.toggle('open');
 
-      // Saare dropdown band kar do
-      dropdownNavs.forEach(dd => dd.classList.remove('active'));
+      // Saare dropdown band
+      dropdownNavs.forEach(function (dd) {
+        dd.classList.remove('active');
+      });
     });
 
-    // Kisi bhi main link par click -> menu band (mobile me)
+    // 2. Kisi bhi main link par tap -> menu band (sirf mobile width)
     document
-      .querySelectorAll('.nav-menu > li > a:not(.dropdown-nav > a)')
-      .forEach(link => {
-        link.addEventListener('click', () => {
+      .querySelectorAll('.nav-menu > li > a')
+      .forEach(function (link) {
+        link.addEventListener('click', function () {
           if (window.innerWidth <= 768) {
             mobileMenuBtn.classList.remove('is-active');
             navMenu.classList.remove('open');
+            dropdownNavs.forEach(function (dd) {
+              dd.classList.remove('active');
+            });
           }
         });
       });
   }
 
-  /* =========== 2. DROPDOWN TOGGLER (MOBILE) =========== */
-  dropdownNavs.forEach(dropdownNav => {
+  // 3. Dropdown toggle (Services / Policies)
+  dropdownNavs.forEach(function (dropdownNav) {
     const dropdownLink = dropdownNav.querySelector('.nav-link');
 
-    // Dropdown title par click
-    dropdownLink.addEventListener('click', (e) => {
+    if (!dropdownLink) return;
+
+    dropdownLink.addEventListener('click', function (e) {
       if (window.innerWidth <= 768) {
         e.preventDefault();
 
-        // Dusre sab dropdown band
-        dropdownNavs.forEach(dd => {
+        // Baaki sab dropdown band
+        dropdownNavs.forEach(function (dd) {
           if (dd !== dropdownNav) dd.classList.remove('active');
         });
 
-        // Current dropdown toggle
         dropdownNav.classList.toggle('active');
       }
     });
-
-    // Dropdown ke andar kisi link par click -> pura menu band
-    dropdownNav.querySelectorAll('.dropdown-menu a').forEach(subLink => {
-      subLink.addEventListener('click', () => {
-        if (window.innerWidth <= 768 && mobileMenuBtn && navMenu) {
-          mobileMenuBtn.classList.remove('is-active');
-          navMenu.classList.remove('open');
-          dropdownNavs.forEach(dd => dd.classList.remove('active'));
-        }
-      });
-    });
   });
 
-  /* =========== 3. HOSTING PAGE DEMO SEARCH LOGIC =========== */
-  const domainInput = document.getElementById('domain-input');
+  /* ============== HOSTING PAGE DEMO SEARCH ============== */
+
+  const domainInput   = document.getElementById('domain-input');
   const resultElement = document.getElementById('search-result');
-  const checkBtn = document.getElementById('check-domain-btn');
+  const checkBtn      = document.getElementById('check-domain-btn');
 
   if (checkBtn && domainInput && resultElement) {
     checkBtn.addEventListener('click', function (e) {
@@ -79,22 +76,29 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // --- Demo Logic ---
       let isAvailable = false;
 
       if (input.includes('.com') || input.includes('.in') || input.includes('.net')) {
 
-        if (input.includes('fastupdate') || input.includes('google') || input.includes('princetech')) {
+        if (input.includes('fastupdate') ||
+            input.includes('google') ||
+            input.includes('princetech')) {
+
           isAvailable = false;
-        } else if (input.includes('clinic') || input.includes('school') || input.includes('yoga')) {
+
+        } else if (input.includes('clinic') ||
+                   input.includes('school') ||
+                   input.includes('yoga')) {
+
           isAvailable = true;
+
         } else {
-          // 70% chance available
-          isAvailable = Math.random() < 0.7;
+          isAvailable = Math.random() < 0.7;  // demo 70% chance
         }
 
       } else {
-        resultElement.textContent = 'Please enter a valid extension (.com, .in, etc.).';
+        resultElement.textContent =
+          'Please enter a valid extension (.com, .in, etc.).';
         resultElement.style.color = 'yellow';
         return;
       }
