@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment & Razorpay - Prince Tech Solutions</title>
+    <title>Payment & UPI - Prince Tech Solutions</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body id="top">
 
     <!-- ===== NAVIGATION BAR ===== -->
@@ -44,97 +45,76 @@
         </div>
     </section>
 
-    <!-- ===== PAYMENT SERVICES GRID ===== -->
+    <!-- ===== SERVICES GRID ===== -->
     <section class="section">
         <div class="container">
             <h2 style="text-align: center; margin-bottom: 30px;">Payment Services</h2>
-            
+
             <div class="card-grid">
-                <!-- Card 1 -->
+
                 <div class="card">
                     <div class="icon-circle"><i class="fas fa-credit-card"></i></div>
                     <h3>Razorpay Gateway</h3>
-                    <p>Complete KYC aur Merchant account setup. Cards, Netbanking &amp; UPI accept kar sakte hain.</p>
+                    <p>Complete KYC and Merchant setup. Cards, Netbanking & UPI.</p>
                 </div>
 
-                <!-- Card 2 -->
                 <div class="card">
                     <div class="icon-circle"><i class="fas fa-qrcode"></i></div>
                     <h3>QR Code Stand</h3>
-                    <p>Printable QR Code design jo aapki dukan ya office counter ke liye perfect hai.</p>
+                    <p>Printable QR Code design jo dukan/office ke liye best hai.</p>
                 </div>
 
-                <!-- Card 3 -->
                 <div class="card">
                     <div class="icon-circle"><i class="fab fa-whatsapp"></i></div>
                     <h3>WhatsApp Payment</h3>
-                    <p>Direct payment link + auto message system, jisse customer se payment confirm karna easy ho jata hai.</p>
+                    <p>Direct payment link & auto confirmation system.</p>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- ===== PAY TO PTS (YOUR PAYMENT BOX) ===== -->
+    <!-- ===== PAY TO PTS ===== -->
     <section class="section" style="background: #f0f4f8;">
         <div class="container" style="text-align: center;">
             <h2>Pay for Your Project</h2>
-            <p style="margin-bottom: 30px;">
-                Agar aap humse website banwa rahe hain, to yahan se directly payment kar sakte hain.
-            </p>
+            <p style="margin-bottom: 25px;">Agar aap humse website banwa rahe hain, to yahan se directly UPI payment kar sakte hain.</p>
 
-            <div style="
-                background: #ffffff;
-                padding: 30px 25px;
-                border-radius: 18px;
-                display: inline-block;
-                box-shadow: 0 12px 35px rgba(0,0,0,0.12);
-                max-width: 420px;
-                width: 100%;
-            ">
-                <h3 style="margin-bottom: 18px; color: var(--secondary-color);">
-                    Scan &amp; Pay (UPI)
-                </h3>
+            <div style="background: white; padding: 30px; border-radius: 18px; display: inline-block;
+                        box-shadow: 0 10px 30px rgba(0,0,0,0.1); max-width: 430px; width: 100%;">
 
-                <!-- QR FRAME + IMAGE -->
-                <div style="
-                    background: #f7f7f7;
-                    border-radius: 16px;
-                    padding: 12px;
-                    border: 1px solid #e0e0e0;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin-bottom: 18px;
-                ">
-                    <!-- yahan aapka QR image (qrcode.png) -->
-                    <img src="qrcode.png"
-                         alt="Scan to pay via UPI"
-                         style="
-                            width: 100%;
-                            max-width: 260px;
-                            border-radius: 12px;
-                            background: #ffffff;
-                            padding: 8px;
-                            box-shadow: 0 6px 18px rgba(0,0,0,0.10);
-                         ">
+                <h3 style="margin-bottom: 20px; color: var(--secondary-color);">Scan & Pay (UPI)</h3>
+
+                <!-- ===== CLEAN QR ONLY (CROPPED) ===== -->
+                <div style="background: #f7f7f7; border-radius: 16px; padding: 12px; border: 1px solid #e0e0e0;
+                            display: flex; align-items: center; justify-content: center; margin-bottom: 18px;">
+
+                    <div style="width: 260px; height: 260px; overflow: hidden; border-radius: 12px;
+                                background: #ffffff; box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+                                display: flex; align-items: center; justify-content: center;">
+
+                        <!-- sirf beech ka QR dikh raha hai -->
+                        <img src="qrcode.png" alt="UPI QR"
+                             style="width: 100%; height: auto; margin-top: -90px;">
+                    </div>
                 </div>
 
-                <p style="font-weight: bold; margin-bottom: 4px;">
+                <!-- UPI TEXT -->
+                <p style="font-weight: bold; margin-bottom: 5px; font-size: 1.1rem;">
                     UPI ID: <span style="color: var(--primary-color);">princetechsolution@ybl</span>
                 </p>
-                <p style="font-size: 0.9rem; color: #666; margin-bottom: 18px;">
-                    Account Name: Prince Tech Solutions
-                </p>
 
-                <!-- WhatsApp confirm button -->
-                <a href="https://wa.me/919065885746?text=Namaste%20Prince%20Tech%20Solutions,%20maine%20UPI%20se%20payment%20kiya%20hai.%20UPI%20ID:%20princetechsolution@ybl"
+                <p style="font-size: 0.9rem; color: #666; margin-bottom: 20px;">Prince Tech Solutions</p>
+
+                <!-- ===== WHATSAPP BUTTON ===== -->
+                <a href="https://wa.me/919065885746?text=I%20have%20made%20the%20payment.%20My%20UPI:%20princetechsolution@ybl"
                    class="btn btn-primary"
-                   style="width: 100%; margin-bottom: 8px;">
+                   style="width: 100%; font-size: 1rem; padding: 14px;">
                     Confirm Payment on WhatsApp
                 </a>
 
-                <p style="font-size: 0.8rem; color: #888; margin-top: 4px;">
-                    Payment ke baad WhatsApp par screenshot ya transaction ID share kar dein.
+                <p style="font-size: 0.8rem; color: #777; margin-top: 12px;">
+                    Payment ke baad WhatsApp par screenshot ya Transaction ID share kar dein.
                 </p>
             </div>
         </div>
@@ -143,11 +123,12 @@
     <!-- ===== FOOTER ===== -->
     <footer>
         <div class="container footer-content">
-            <p>Designed &amp; Developed by <strong>Prince Tech Solutions (PTS)</strong></p>
+            <p>Designed & Developed by <strong>Prince Tech Solutions (PTS)</strong></p>
             <p>© 2025 All Rights Reserved.</p>
         </div>
     </footer>
 
     <script src="main.js"></script>
+
 </body>
 </html>
