@@ -1501,3 +1501,83 @@ footer {
         font-size: 0.85rem;
     }
 }
+
+/* PREMIUM CLIENT CARDS (GLASS + GRADIENT BORDER + PREMIUM UI) */
+.client-premium-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 35px;
+    margin-top: 40px;
+}
+
+.client-premium-card {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 30px 25px;
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,0.4);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    position: relative;
+    transition: 0.35s ease;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Gradient top border */
+.client-premium-card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 5px;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #ff6b6b, #ff9f43);
+}
+
+/* Hover Effect */
+.client-premium-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.18);
+}
+
+/* ICON STYLING */
+.client-premium-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0 auto 15px;
+    color: #fff;
+}
+
+/* Unique gradient icons */
+.icon-1 { background: linear-gradient(135deg, #ff6b6b, #ff9f43); }
+.icon-2 { background: linear-gradient(135deg, #2ecc71, #1abc9c); }
+.icon-3 { background: linear-gradient(135deg, #2e86de, #54a0ff); }
+
+/* TAG (Small label) */
+.client-premium-tag {
+    font-size: 0.8rem;
+    color: var(--secondary-color);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* URL */
+.client-premium-url {
+    font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 12px;
+}
+
+/* Description */
+.client-premium-desc {
+    font-size: 0.95rem;
+    color: #444;
+    min-height: 70px;
+    margin-bottom: 20px;
+}
