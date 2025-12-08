@@ -1657,3 +1657,52 @@ footer {
     min-height: 70px;
     margin-bottom: 18px;
 }
+/* ================= MOBILE MENU FIX ================= */
+@media (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        top: 75px;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+        gap: 10px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        z-index: 2000; /* menu hamesha upar rahe */
+    }
+
+    .nav-menu.open {
+        max-height: 400px;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    /* Hamburger animation */
+    .menu-toggle .bar {
+        display: block;
+        width: 28px;
+        height: 3px;
+        margin: 5px auto;
+        transition: 0.3s ease;
+        background-color: var(--dark-color);
+    }
+
+    .menu-toggle.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-toggle.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
